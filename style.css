@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=Sen&display=swap');
+:root {
+    --foreColor: #000;
+    --backColor: #c9ced3;
+    --borderColor: #000;
+}
+
+html {
+    font-size: 10px;
+    box-sizing: border-box;
+}
+
+body {
+    color: var(--foreColor);
+    background-color: var(--backColor);
+    font-family: Sen, sans-serif;
+    font-size: 1.6rem;
+    letter-spacing: .2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container {
+    width: 48rem;
+    height: 63rem;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 1rem;
+    box-shadow: 0 .5rem 3rem 1rem rgba(0, 0, 0, 0.4);
+}
+
+#form {
+    width: 90%;
+}
+
+.form-group {
+    height: 6.5rem;
+}
+
+label {
+    position: relative;
+    bottom: .3rem;
+}
+
+input {
+    width: 100%;
+    height: 3.4rem;
+    padding: .5rem;
+    border: 1px solid black;
+    border-radius: .5rem;
+    outline: none;
+    box-sizing: border-box;
+}
+
+input:valid {
+    border: 1px solid green;
+}
+
+input:invalid {
+    border: 1px solid red;
+}
+
+button {
+    cursor: pointer;
+    color: white;
+    background: black;
+    border: none;
+    border-radius: .5rem;
+    height: 5rem;
+    width: 100%;
+    font-size: 2rem;
+    letter-spacing: .2rem;
+    margin-top: .5rem;
+}
+
+button:hover {
+    filter: brightness(200%);
+    background: rgb(22, 22, 22);
+}
+
+button:focus {
+    outline: none;
+}
+
+.message-container {
+    width: 90%;
+    margin-top: 2rem;
+    border: 1px solid black;
+    border-radius: .5rem;
+    display: flex;
+    justify-content: center;
+    color: var(--foreColor);
+}
